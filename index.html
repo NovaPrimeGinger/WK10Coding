@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villain Activity Log</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <p>Help us keep the streets safe by logging villainous acitivity here</p>
+    
+    <div class="card"><br>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">First Villainous Act Date</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+
+                </div><div class="form-group">
+                        <label for="new-end-date">Last Villainous Act Date</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+
+                        <label for="new-task">Villain Name</label>
+                        <input type="text" class="form-control" id="new-task" placeholder="Name that villain!">
+                    </div>
+                </div>
+            </div><br>
+            <button id="add" class="btn btn-primary form-control">Create</button>
+        </div>
+    </div>
+
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Villain Name</th>
+            <th>Date Created</th>
+            <th>First Villainous Act</th>
+            <th>Last Villainous Act</th>
+            <th>Actions</th>
+        </tr>
+
+    </table>
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
